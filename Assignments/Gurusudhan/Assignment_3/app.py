@@ -27,7 +27,7 @@ def register():
 
     if not email or not username or not rollNo or not password:
       return render_template('register.html',error='Please fill all fields')
-    
+
     hash=bcrypt.hashpw(password.encode('utf-8'),bcrypt.gensalt())
 
     query = "SELECT * FROM USER WHERE email=? OR rollNo=?"
@@ -36,7 +36,7 @@ def register():
     ibm_db.bind_param(stmt,2,rollNo)
     ibm_db.execute(stmt)
     isUser = ibm_db.fetch_assoc(stmt)
-    
+
     if not isUser:
       insert_sql = "INSERT INTO User(username,email,PASSWORD,rollNo) VALUES (?,?,?,?)"
       prep_stmt = ibm_db.prepare(conn, insert_sql)
@@ -68,7 +68,7 @@ def login():
 
       if not isUser:
         return render_template('login.html',error='Invalid Credentials')
-      
+
       isPasswordMatch = bcrypt.checkpw(password.encode('utf-8'),isUser['PASSWORD'].encode('utf-8'))
 
       if not isPasswordMatch:
@@ -84,3 +84,6 @@ def login():
 def logout():
     session.pop('email', None)
     return redirect(url_for('login'))
+
+if __name__=='__main__':
+  app.run(host='0.0.0.0',port=8000,debug=True)
