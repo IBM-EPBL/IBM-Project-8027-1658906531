@@ -1,0 +1,174 @@
+	body{
+background:white;
+}
+.name
+{
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 200px;
+    padding-top: 0px;
+}
+.container-box
+{
+    background-color: aliceblue;
+    padding-left: 75px;
+    padding-top: 50px;
+    margin-top: 1px;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 820px;
+    border-radius: 10px;
+    background-image: url('BACKGROUND.jpg') ;
+    background-repeat: no-repeat;
+    background-size: 100% 35%;
+    border-color: black;
+}
+.pic{
+    background-color:whitesmoke;
+    border-radius: 0px;
+    width: 240px;
+    position: relative;
+    right: -3px;
+    margin-left: 0%;
+    margin-top: 30px;
+    float: left;
+    
+}
+.pic img{
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 210px;
+    width: 210px;
+}
+.in-name{
+    margin-top: 20px;
+ margin-left: 130px;
+ float: left;
+ color:white;
+ font-size: 20px;
+ font-family: Arial, Helvetica, sans-serif;
+ word-spacing: normal;
+}
+.in-name p{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.button-one{
+    height: 40px;
+    width:150px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    font-weight: bold;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: aliceblue;
+    text-align: center;
+    font-size: 17px;
+    border: none;
+}
+.button-two{
+    height: 40px;
+    width:100px;
+    border-radius: 20px;
+    background-color: lightgreen;
+    font-weight: bold;
+    color: white;
+    border: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: lightgreen;
+    font-size: 17px;
+}
+.about-me
+{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    clear: left;
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 13px;
+}
+.about-me p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.details{
+    padding-top: 25px;
+    float: left;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    padding-left: 40px;
+    line-height: 20px;
+}
+.details-ans{
+    float: left;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    padding-left: 30px;
+    line-height: 20px;
+    padding-top: 25px;
+}
+.down-box
+{
+    float: left;
+    clear: left;
+    border: solid black;
+    border-width: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 200;
+    width: 950px;
+    height:290px;
+    padding-left: 40px;
+    padding-top:20px ;
+}
+* {box-sizing: border-box}
+
+.container {
+  width: 300px;
+  background-color: #ddd;
+  border-radius: 10px;
+  height: 20px;
+}
+
+.skills {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    text-align: right;
+    padding-top: 4px;
+    padding-right: 20px;
+    font-size: small;
+    padding-bottom: 0px;
+    color: white;
+}
+
+.sql {width: 90%; background-color: #f44336; height: 20px;border-radius: 10px;}
+.fe {width: 60%; background-color: #00FFFF;  height: 20px;border-radius: 10px;}
+.c {width: 60%; background-color: royalblue;  height: 20px;border-radius: 10px;}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+.skill{
+    float:left
+}
+.projects{
+    float:left;
+    padding-left: 30px;
+}
+.projects ul li{
+    line-height: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 13px;
+}
