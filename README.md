@@ -2,8 +2,8 @@
 Smart Fashion Recommender Application
 
 Team Members:  
-    Gurusudhan V  
-    Niyas Y  
-    Sabari M  
-    Agaludhaya G  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;Gurusudhan V  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;Niyas Y  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;Sabari M  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;Agaludhaya G  
     
