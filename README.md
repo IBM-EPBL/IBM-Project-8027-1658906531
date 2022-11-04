@@ -1,5 +1,6 @@
-# IBM-Project-8027-1658906531
-Smart Fashion Recommender Application
+# IBM-Project-8027-1658906531  
+
+### Smart Fashion Recommender Application
 
 Team Members:  
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;Gurusudhan V  
