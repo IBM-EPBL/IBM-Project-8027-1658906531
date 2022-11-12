@@ -1,10 +1,14 @@
-{% extends "base.html" %} {% block title %}Signup{% endblock %}
-{% block content%}
-<form>
+{% extends "base.html" %} {% block title %}Signup{% endblock %} {%block
+content%}
+
+<div
+  class="container-fluid w-custom mt-custom pt-custom border border-dark pl-custom"
+>
+  <form>
     <h3 align="center">Sign up</h3>
     <div class="form-group">
-        <label for="email">Email Address</label>
-        <input
+      <label for="email">Email Address</label>
+      <input
         type="email"
         class="form-control"
         id="email"
@@ -43,6 +47,7 @@
       />
     </div>
     <br />
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+    <button type="submit" class="btn btn-primary mb-custom">Submit</button>
+  </form>
+</div>
 {% endblock %}
