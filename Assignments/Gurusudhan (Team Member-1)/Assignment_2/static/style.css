@@ -1,11 +1,119 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 48px;
+}
+p {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.header {
+  position: relative;
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  color: white;
+}
+
+.inner-header {
+  height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+
+.bg-custom {
+  background-color: white;
+}
+.text-custom {
+  color: black;
+}
+.h1 {
+  font-size: 350%;
+}
+.h2 {
+  font-size: 350%;
+}
 .w-custom {
-  width: 500px;
+  width: 350px;
 }
 .mt-custom {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .mb-custom {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .name {
   margin-top: 10px;
@@ -16,20 +124,51 @@
   border-radius: 20px;
 }
 .pl-custom {
-  padding-left: 20px;
+  padding-left: 15px;
 }
-body {
-  background: linear-gradient(45deg, blue, red);
-  background-repeat: no-repeat;
-  height: 800px;
-}
+
 .container-fluid {
   background: white;
+  color: black;
 }
 .pt-custom {
   padding-top: 20px;
 }
-h1,
-h2 {
+.btn-custom {
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
   color: white;
+  font-size: larger;
+  width: 320px;
+  height: 50px;
+}
+button:hover {
+  color: white;
+}
+.text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.name {
+  color: black;
+  font-weight: bolder;
+  font-family: fantasy;
+  font-style: oblique;
+}
+.font-custom {
+  font-family: serif;
+}
+.border-custom:hover {
+  border-color: blue;
+  border-width: 3px;
+  transform: scale3d(1, 1, 1);
+  transition: transform 0.5s;
+  transition: color 0.25s;
+}
+.form-control:focus {
+  border-color: lightblue;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0px 0px 8px rgba(255, 100, 255, 0.5);
 }
