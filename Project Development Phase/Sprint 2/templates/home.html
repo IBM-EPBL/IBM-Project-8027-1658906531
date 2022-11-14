@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'home.css') }}"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" id="home" href="/home">Home</a>
+          <a class="nav-item nav-link" id="home" href="/cart">Cart</a>
+        </div>
+      </div>
+      <div id="navbar-nav float-right">
+        <a class="nav-item nav-link text-danger" id="logout" href="/">Logout</a>
+      </div>
+    </nav>
+    <div class="content">
+      {%block content%}
+      <div class="card-group">
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="{{ url_for('static', filename = 'mens-fas.png') }}"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">MEN'S CORNER</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="/cart" class="btn btn-primary">Add to cart</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="{{ url_for('static', filename = 'kids-clothing.png') }}"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">CHILDREN PICKS</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="/cart" class="btn btn-primary">Add to cart</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="{{ url_for('static', filename = 'womens-fas.png') }}"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">WOMEN'S CORNER</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="/cart" class="btn btn-primary">Add to cart</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="{{ url_for('static', filename = 'Mens-Accessories.png') }}"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">ACCESSORIES</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="/cart" class="btn btn-primary">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      {%endblock%}
+    </div>
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "ed691e2a-3755-46f6-ba80-2937b1ab411d", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "e0026043-09be-4231-8e79-09ea7ca8992f", // The ID of your service instance.
+        onLoad: function (instance) {
+          instance.render();
+        },
+      };
+      setTimeout(function () {
+        const t = document.createElement("script");
+        t.src =
+          "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+          (window.watsonAssistantChatOptions.clientVersion || "latest") +
+          "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+  </body>
+</html>
