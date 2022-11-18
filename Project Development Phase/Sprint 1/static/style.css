@@ -46,7 +46,7 @@ p {
   position: relative;
   width: 100%;
   height: 15vh;
-  margin-bottom: -7px; /*Fix for safari gap*/
+  margin-bottom: -12px; /*Fix for safari gap*/
   min-height: 100px;
   max-height: 150px;
 }
@@ -109,15 +109,16 @@ p {
 .w-custom {
   width: 350px;
 }
+.h-custom {
+  height: 350px;
+}
 .mt-custom {
   margin-top: 40px;
 }
 .mb-custom {
   margin-bottom: 40px;
 }
-.name {
-  margin-top: 10px;
-}
+
 .border {
   border-style: solid;
   border-width: thick;
@@ -134,28 +135,16 @@ p {
 .pt-custom {
   padding-top: 20px;
 }
-.btn-custom {
-  background: linear-gradient(
-    60deg,
-    rgba(84, 58, 183, 1) 0%,
-    rgba(0, 172, 193, 1) 100%
-  );
-  color: white;
-  font-size: larger;
-  width: 320px;
-  height: 50px;
-}
-button:hover {
-  color: white;
-}
+
 .text {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 .name {
   color: black;
   font-weight: bolder;
-  font-family: fantasy;
   font-style: oblique;
+  margin-top: 10px;
+  font-weight: bolder;
 }
 .font-custom {
   font-family: serif;
@@ -171,4 +160,39 @@ button:hover {
   border-color: lightblue;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset,
     0px 0px 8px rgba(255, 100, 255, 0.5);
+}
+.btn-cus {
+  background: black;
+  color: white;
+  font-size: larger;
+  width: 320px;
+  height: 50px;
+}
+.fl {
+  float: right;
+  text-align: end;
+  color: black;
+  text-decoration: none;
+  text-align: right;
+}
+.btn-custom {
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  color: white;
+  font-size: larger;
+  width: 320px;
+  height: 50px;
+}
+button:hover {
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: black;
 }
