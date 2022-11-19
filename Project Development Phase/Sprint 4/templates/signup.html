@@ -1,0 +1,102 @@
+{% extends "Login.html" %} {% block title %}Signup{% endblock %} {%block
+content2%}
+<div class="header">
+  <!--Content before waves-->
+  <div class="inner-header flex">
+    <div
+      class="container-fluid w-custom mt-custom pt-custom border border-dark pl-custom"
+    >
+      <form method="POST">
+        <div class="name mt-0">
+          <h3 align="center">SIGN UP</h3>
+        </div>
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control border-custom shadow mt-3"
+            id="email"
+            name="email"
+            placeholder="Enter email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control border-custom shadow mt-3"
+            id="firstName"
+            name="firstName"
+            placeholder="Enter first name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control border-custom shadow mt-3"
+            id="password1"
+            name="password1"
+            placeholder="Enter password"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control border-custom shadow mt-3"
+            id="password2"
+            name="password2"
+            placeholder="Confirm password"
+            required
+          />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-custom mb-2">Submit</button>
+        <button class="btn btn-cus mb-3">
+          <a href="/">Already Have An Account</a>
+        </button>
+      </form>
+    </div>
+  </div>
+  <!--Waves Container-->
+  <div>
+    <svg
+      class="waves mt-5"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28"
+      preserveAspectRatio="none"
+      shape-rendering="auto"
+    >
+      <defs>
+        <path
+          id="gentle-wave"
+          d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+        />
+      </defs>
+      <g class="parallax">
+        <use
+          xlink:href="#gentle-wave"
+          x="48"
+          y="0"
+          fill="rgba(255,255,255,0.7"
+        />
+        <use
+          xlink:href="#gentle-wave"
+          x="48"
+          y="3"
+          fill="rgba(255,255,255,0.5)"
+        />
+        <use
+          xlink:href="#gentle-wave"
+          x="48"
+          y="5"
+          fill="rgba(255,255,255,0.3)"
+        />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+    </svg>
+  </div>
+  <!--Waves end-->
+</div>
+{% endblock %}

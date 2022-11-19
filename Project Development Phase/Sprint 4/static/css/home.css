@@ -1,0 +1,45 @@
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 34%,
+    rgba(0, 212, 255, 1) 86%
+  );
+}
+.card {
+  padding-bottom: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 34%,
+    rgba(0, 212, 255, 1) 86%
+  );
+  color: white;
+  border-style: none;
+}
+.h-custom {
+  height: 400px;
+}
+.h1-custom {
+  height: 250px;
+}
+.w-custom {
+  width: 100vmx;
+}
+.c2 {
+  padding: 0px;
+  background: white;
+  color: black;
+  border-style: none;
+  height: 400px;
+}
+.height {
+  height: 500px;
+}
+.but {
+  float: right;
+}
+.pl {
+  padding-left: 380px;
+}

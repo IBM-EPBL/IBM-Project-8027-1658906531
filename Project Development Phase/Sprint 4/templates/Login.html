@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="{{ url_for('static', filename = './icon/fashion-icon-app.png') }}" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = './css/style.css') }}"
+      }
+    />
+    <title>{%block title%}Home{%endblock%}</title>
+  </head>
+  <body>
+  <div class="more">
+    {% block content2 %}
+    <div class="header">
+        <!--Content before waves-->
+        <div class="inner-header flex">
+          <div
+  class="container-fluid w-custom h-custom mt-custom border pl-custom shadow-lg"
+>
+  <form method="POST">
+    <div class="name">
+      <h3 align="center">USER LOGIN</h3>
+    </div>
+    <div class="form-group ">
+      <input
+        type="email"
+        class="form-control active  border-custom shadow  mt-3"
+        id="email"
+        name="email"
+        placeholder="Enter email" required
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="password"
+        class="form-control border-custom shadow mt-3"
+        id="password"
+        name="password"
+        placeholder="Enter password" required
+      />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-custom mb-custom mb-2">Login</button>
+    <div class="bottom">
+      <input type="checkbox" , id="rem">
+      <label for="rem">Remember Me</label>
+      <a href="#" class="fl">Forgot Password?</a>
+    </div>
+    <button class="btn btn-cus mt-2"><a href="/signup">Create an Account</a></button>
+  </form>
+</div>
+
+        </div>
+      
+        <!--Waves Container-->
+        <div>
+          <svg class="waves mt-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+              <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+              <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+              <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+          </svg>
+        </div>
+        <!--Waves end-->
+      
+      </div>
+      <!--Header ends-->
+      {%endblock%}
+      <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "ed691e2a-3755-46f6-ba80-2937b1ab411d", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "e0026043-09be-4231-8e79-09ea7ca8992f", // The ID of your service instance.
+          onLoad: function (instance) {
+            instance.render();
+          },
+        };
+        setTimeout(function () {
+          const t = document.createElement("script");
+          t.src =
+            "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+            (window.watsonAssistantChatOptions.clientVersion || "latest") +
+            "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>  
+  </body>
+</html>

@@ -1,0 +1,58 @@
+{%extends "home.html"%} {%block content%}
+<div class="container bg-light rounded">
+  <div class="container-fluid bg-light p-0 mt-2">
+    <div class="row">
+      <div class="col-lg-6">
+        <h1>WELCOME TO CART</h1>
+      </div>
+      <div class="col-lg-6 mt-2 pl">
+        <a class="btn btn-primary" href="/home">Continue shopping</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-3 rounded height bg-light">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6">
+        <img
+          class="mt-2 rounded"
+          src="{{ url_for('static', filename = '/mens-products/shirt1.jpeg') }}"
+          alt="Card image cap"
+        />
+      </div>
+      <div class="col-lg-6 mt-2">
+        <form action="POST">
+          <label for="Fullname">Fullname</label>
+          <input type="text" placeholder="Full name" class="form-control" />
+          <label for="Address">Address line-1</label>
+          <input
+            type="text"
+            placeholder="Address Line-1"
+            class="form-control"
+          />
+          <label for="Address l2">Address Line-2</label>
+          <input
+            type="text"
+            placeholder="Address Line-2"
+            class="form-control"
+          />
+          <label for="Phone Number">Phone Number</label>
+          <input
+            type="number"
+            placeholder="Phone number"
+            class="form-control"
+          />
+          <label for="email">Email</label>
+          <input type="email" placeholder="Email" class="form-control" />
+        </form>
+        <div class="price">
+          <button class="btn btn-danger mt-4">Price - ₹480</button>
+          <button class="btn btn-outline-dark mt-4">Confirm order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{%endblock%}
