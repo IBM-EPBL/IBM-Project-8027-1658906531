@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename = 'fashion-icon-app.png') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'home.css') }}"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav">
+          <li>
+            <a class="nav-item nav-link" id="home" href="/home">Home</a>
+          </li>
+          <li>
+            <a class="nav-item nav-link" id="home" href="/cart">Cart</a>
+          </li>
+        </ul>
+      </div>
+      <div id="navbar-nav float-right">
+        <a class="nav-item nav-link text-danger" id="logout" href="/">Logout</a>
+      </div>
+    </nav>
+    <div class="content">
+      {%block content%}
+      <div class="card-group">
+        <div class="card ml-2 mt-2 h-custom" style="width: 18rem">
+          <img
+            class="card-img-top h-75"
+            src="{{ url_for('static', filename = 'mens-fas.png') }}"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">MEN'S CORNER</h5>
+            <a href="#" class="btn btn-primary" id="MEN'S CORNER"
+              >Access More</a
+            >
+          </div>
+        </div>
+        <div class="card ml-2 mt-2 h-custom" style="width: 18rem">
+          <img
+            class="card-img-top h-75"
+            src="{{ url_for('static', filename = 'kids-clothing.png') }}"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">CHILDREN PICKS</h5>
+            <a href="/cart" class="btn btn-primary">Access More</a>
+          </div>
+        </div>
+        <div class="card ml-2 mt-2 h-custom" style="width: 18rem">
+          <img
+            class="card-img-top h-75"
+            src="{{ url_for('static', filename = 'womens-fas.png') }}"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">WOMEN'S CORNER</h5>
+            <a href="/cart" class="btn btn-primary">Access More</a>
+          </div>
+        </div>
+        <div class="card ml-2 mt-2 mr-2 h-custom" style="width: 18rem">
+          <img
+            class="card-img-top h-75"
+            src="{{ url_for('static', filename = 'Mens-Accessories.png') }}"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">ACCESSORIES</h5>
+            <a href="/cart" class="btn btn-primary">Access More</a>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-3 ml-2 mr-2 p-0 bg-dark text-light">
+        <h1 align="center">MEN'S CORNER</h1>
+        <div class="card-group">
+          <div class="card c2 ml-2 mt-2" style="width: 18rem">
+            <img
+              class="card-img-top h1-custom"
+              src="{{ url_for('static', filename = '/MENS PRODUCTS/tshirt1.jpeg') }}"
+              alt="Card image cap"
+            />
+            <div class="card-body na">
+              <h3 class="card-title">PUMA TSHIRT</h3>
+              <h4>200rs</h4>
+              <button align="center" class="btn btn-primary">
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div class="card c2 ml-2 mt-2" style="width: 18rem">
+            <img
+              class="card-img-top h1-custom"
+              src="{{ url_for('static', filename = '/MENS PRODUCTS/tshirt2.png') }}"
+              alt="Card image cap"
+            />
+            <div class="card-body na">
+              <h3 class="card-title">ADIDDAS TSHIRT</h3>
+              <h4>400rs</h4>
+              <button class="btn btn-primary float-left">Add to cart</button>
+            </div>
+          </div>
+          <div class="card c2 ml-2 mt-2" style="width: 18rem">
+            <img
+              class="card-img-top h1-custom"
+              src="{{ url_for('static', filename = '/MENS PRODUCTS/tshirt3.jpeg') }}"
+              alt="Card image cap"
+            />
+            <div class="card-body na">
+              <h3 class="card-title">BENZO TSHIRT</h3>
+              <h4>100rs</h4>
+              <button align="center" class="btn btn-primary">
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div class="card c2 ml-2 mt-2 mr-2" style="width: 18rem">
+            <img
+              class="card-img-top h1-custom"
+              src="{{ url_for('static', filename = '/MENS PRODUCTS/tshirt4.jpeg') }}"
+              alt="Card image cap"
+            />
+            <div class="card-body na">
+              <h3 class="card-title">HIFI TSHIRT</h3>
+              <h4>300rs</h4>
+              <button align="center" class="btn btn-primary">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="card c2 ml-2 mt-2" style="width: 18rem">
+            <img
+              class="card-img-top h1-custom"
+              src="{{ url_for('static', filename = '/MENS PRODUCTS/shirt1.jpeg') }}"
+              alt="Card image cap"
+            />
+            <div class="card-body na">
+              <h3 class="card-title">PETER ENGLAND</h3>
+              <h4>980rs</h4>
+              <button align="center" class="btn btn-primary">
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div class="card c2 ml-2 mt-2" style="width: 18rem">
+            <img
+              class="card-img-top h1-custom"
+              src="{{ url_for('static', filename = '/MENS PRODUCTS/shirt2.png') }}"
+              alt="Card image cap"
+            />
+            <div class="card-body na">
+              <h3 class="card-title">LEVI'S</h3>
+              <h4>780rs</h4>
+              <button class="btn btn-primary float-left">Add to cart</button>
+            </div>
+          </div>
+          <div class="card c2 ml-2 mt-2" style="width: 18rem">
+            <img
+              class="card-img-top h1-custom"
+              src="{{ url_for('static', filename = '/MENS PRODUCTS/shirt3.png') }}"
+              alt="Card image cap"
+            />
+            <div class="card-body na">
+              <h3 class="card-title">RAZE SHIRT</h3>
+              <h4>1000rs</h4>
+              <button align="center" class="btn btn-primary">
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div class="card c2 ml-2 mt-2 mr-2" style="width: 18rem">
+            <img
+              class="card-img-top h1-custom"
+              src="{{ url_for('static', filename = '/MENS PRODUCTS/shirt4.jpeg') }}"
+              alt="Card image cap"
+            />
+            <div class="card-body na">
+              <h3 class="card-title">PRINTED SHIRT</h3>
+              <h4>1300rs</h4>
+              <button align="center" class="btn btn-primary">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-3 ml-2 mr-2 p-0 bg-dark text-light">
+        <h1 align="center">WOMEN'S CORNER</h1>
+        <div class="card-group">
+          <div class="card c2 ml-2 mt-2" style="width: 18rem">
+            <img
+              class="card-img-top h1-custom"
+              src="{{ url_for('static', filename = '/women/pic1.jpg') }}"
+              alt="Card image cap"
+            />
+            <div class="card-body na">
+              <h3 class="card-title">JEAN AND TSHIRT</h3>
+              <h4>200rs</h4>
+              <button align="center" class="btn btn-primary">
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div class="card c2 ml-2 mt-2" style="width: 18rem">
+            <img
+              class="card-img-top h1-custom"
+              src="{{ url_for('static', filename = '/women/pic2.jpeg') }}"
+              alt="Card image cap"
+            />
+            <div class="card-body na">
+              <h3 class="card-title">CROP TOP</h3>
+              <h4>400rs</h4>
+              <button class="btn btn-primary float-left">Add to cart</button>
+            </div>
+          </div>
+          <div class="card c2 ml-2 mt-2" style="width: 18rem">
+            <img
+              class="card-img-top h1-custom"
+              src="{{ url_for('static', filename = '/women/pic3.jpeg') }}"
+              alt="Card image cap"
+            />
+            <div class="card-body na">
+              <h3 class="card-title">BALLON TSHIRT LEGGIN</h3>
+              <h4>100rs</h4>
+              <button align="center" class="btn btn-primary">
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div class="card c2 ml-2 mt-2 mr-2" style="width: 18rem">
+            <img
+              class="card-img-top h1-custom"
+              src="{{ url_for('static', filename = '/women/pic5.jpg') }}"
+              alt="Card image cap"
+            />
+            <div class="card-body na">
+              <h3 class="card-title">LEHENGA</h3>
+              <h4>300rs</h4>
+              <button align="center" class="btn btn-primary">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="card c2 ml-2 mt-2" style="width: 18rem">
+            <img
+              class="card-img-top h1-custom"
+              src="{{ url_for('static', filename = '/women/pic6.jpeg') }}"
+              alt="Card image cap"
+            />
+            <div class="card-body na">
+              <h3 class="card-title">RED HOT TSHIRT</h3>
+              <h4>980rs</h4>
+              <button align="center" class="btn btn-primary">
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div class="card c2 ml-2 mt-2" style="width: 18rem">
+            <img
+              class="card-img-top h1-custom"
+              src="{{ url_for('static', filename = '/women/pic7.jpg') }}"
+              alt="Card image cap"
+            />
+            <div class="card-body na">
+              <h3 class="card-title">LEVI'S WOMEN'S SHIRT</h3>
+              <h4>780rs</h4>
+              <button class="btn btn-primary float-left">Add to cart</button>
+            </div>
+          </div>
+          <div class="card c2 ml-2 mt-2" style="width: 18rem">
+            <img
+              class="card-img-top h1-custom"
+              src="{{ url_for('static', filename = '/women/pic8.jpg') }}"
+              alt="Card image cap"
+            />
+            <div class="card-body na">
+              <h3 class="card-title">RAZE WOMEN'S SHIRT</h3>
+              <h4>1000rs</h4>
+              <button align="center" class="btn btn-primary">
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div class="card c2 ml-2 mt-2 mr-2" style="width: 18rem">
+            <img
+              class="card-img-top h1-custom"
+              src="{{ url_for('static', filename = '/women/one.jpg') }}"
+              alt="Card image cap"
+            />
+            <div class="card-body na">
+              <h3 class="card-title">CROP TSHIRT</h3>
+              <h4>1300rs</h4>
+              <button align="center" class="btn btn-primary">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {%endblock%}
+    </div>
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "bc30e1f2-df6f-4ca4-a430-4925b339dd36", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "e0026043-09be-4231-8e79-09ea7ca8992f", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+    </script>
+  </body>
+</html>
