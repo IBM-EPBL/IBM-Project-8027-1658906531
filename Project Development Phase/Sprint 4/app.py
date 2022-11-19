@@ -3,7 +3,7 @@ import ibm_db
 import bcrypt
 import sendgrid
 import os
-conn = ibm_db.connect("DATABASE=bludb;HOSTNAME=ea286ace-86c7-4d5b-8580-3fbfa46b1c66.bs2io90l08kqb1od8lcg.databases.appdomain.cloud;PORT=31505;SECURITY=SSL;SSLServiceCertificate=DigiCertGlobalRootCA.crt;UID=lpr87378;PWD=z1LR9MwJzLBYvmD4", '', '')
+conn = ibm_db.connect("DATABASE=bludb;HOSTNAME=;PORT=;SECURITY=SSL;SSLServiceCertificate=DigiCertGlobalRootCA.crt;UID=;PWD=", '', '')
 app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
